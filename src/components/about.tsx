@@ -1,6 +1,6 @@
 'use client';
-
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import { SectionHeading } from '@/components/section-heading';
 import { Skills } from '@/components/skills';
@@ -20,22 +20,18 @@ export const About = () => {
     >
       <SectionHeading heading="About Me" />
       <div className="-mt-5 max-w-2xl text-center leading-7">
+        <Image
+          src="/images/AboutMe.jpg"
+          alt="Your Name"
+          className="mx-auto mb-4 size-40 rounded-full" // Add your desired styling
+        />
         <p className="mb-4">
-          I&apos;m Michał Skolak, I&apos;m a front-end developer from Poland.
-          I&apos;ve been learning programming for over 3 years. After I started
-          high school, I decided to pursue my passion for programming. My
-          favorite part of programming is the problem-solving aspect. I love the
-          feeling of finally figuring out a solution to a problem. I&apos;ve had
-          the opportunity to work on several exciting projects during my
-          learning journey, ranging from personal projects to collaborative
-          ventures. My core stack is React, Next.js, TypeScript, and Tailwind
-          CSS. I am also familiar with Nest.js and Prisma. I&apos;m always
-          looking to learn new technologies.
-        </p>
-        <p>
-          I&apos;m open to Job opportunities where I can contribute, learn and
-          grow. If you have a good opportunity that matches my skills and
-          experience then don&apos;t hesitate to contact me.
+          I&apos;m Victor Ihetu, I&apos;m a Cloud and Devops Engineer with a
+          strong focus on automation, scalability, and infrastructure as code.
+          Skilled in AWS, Azure, Kubernetes, Docker, Terraform, and CI/CD
+          pipelines. Passionate about building reliable, high-performance
+          systems and driving cloud-native solutions to streamline deployments
+          and enhance system reliability.
         </p>
       </div>
       <Skills />

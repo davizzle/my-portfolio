@@ -1,13 +1,17 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 
-import { buttonVariants } from '@/components/button';
+// import { buttonVariants } from '@/components/button';
 import { Icons } from '@/components/icons';
-import { cn } from '@/lib/utils';
+// import { cn } from '@/lib/utils';
 
 export const links = [
   {
     name: 'Home',
     hash: '#home',
+  },
+  {
+    name: 'Project Idea',
+    hash: '#project-idea',
   },
   {
     name: 'About',
@@ -29,80 +33,61 @@ export const links = [
 
 export const projectsData = [
   {
-    image: '/images/project-2.webp',
-    title: 'Next-starter',
+    image: '/images/AMNI-Intranet.webp',
+    title: 'AMNI Intranet',
     description:
-      'A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools and more.',
-    technologies: ['Next.js', 'Tailwind', 'Shadcn/ui', 'Next-auth', 'Prisma'],
+      'A Next.js Intranet website, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, and more.',
+    technologies: ['Next.js', 'Tailwind', 'Next-auth', 'Prisma'],
     links: {
-      preview: 'https://next-starter-skolaczk.vercel.app',
-      github: 'https://github.com/Skolaczk/next-starter',
-      githubApi: 'https://api.github.com/repos/Skolaczk/next-starter',
+      preview: 'https://amni-kappa.vercel.app',
+      github: 'https://github.com/Tobey14/amni',
     },
   },
   {
-    image: '/images/project-1.webp',
-    title: 'SocialHub',
+    image: '/images/RoboFriends.webp',
+    title: 'RoboFriends',
     description:
-      'SocialHub is a next-generation social media app developed using Next.js and Nest.js.',
-    technologies: ['Next.js', 'TypeScript', ' Nest.js', 'Tailwind', 'Prisma'],
+      'RoboFriends is an app developed using React.js and Tailwind.css',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind'],
     links: {
-      preview: 'https://socialhub-ms.vercel.app/',
-      github: 'https://github.com/Skolaczk/SocialHub',
-      githubApi: 'https://api.github.com/repos/Skolaczk/SocialHub',
+      preview: 'https://davizzle.github.io/RoboFriends/',
+      github: 'https://github.com/davizzle/RoboFriends',
     },
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: 'Web developer intern',
-    company: 'WEB-BOX, Tarnobrzeg PL',
-    description:
-      'During this internship, I focused on two key areas: creating Wordpress plugins and managing website content, plugins, and settings.',
-    period: '2023',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Wordpress'],
-  },
-  {
-    title: 'Frontend developer & UI designer',
+    title: 'Cloud & DevOps Engineer',
     company: 'Freelancing, remote',
     description:
-      'As a freelancer, I specialized in graphic design using Figma and website development using Next.js with Sanity CMS. I undertook projects independently, from design conceptualization to final implementation, ensuring client satisfaction.',
-    period: '2023 - 2024',
-    technologies: ['Next.js', 'TypeScript', 'Sanity CMS', 'Tailwind'],
+      'As a freelance Cloud & DevOps Engineer, I specialize in automating infrastructure, optimizing cloud resources, and implementing CI/CD pipelines. I have worked on projects focusing on scalable, high-performance systems using AWS, Azure, Kubernetes, Docker, Terraform, and other cloud-native tools, ensuring system reliability and cost-efficiency.',
+    period: '2023 - Present',
+    technologies: [
+      'AWS',
+      'Azure',
+      'Kubernetes',
+      'Docker',
+      'Terraform',
+      'CI/CD',
+      'Linux',
+    ],
   },
   {
-    title: 'Frontend developer intern',
-    company: 'Chop-chop, remote',
+    title: 'Cloud & DevOps Engineer',
+    company: 'Peerless, remote',
     description:
-      'During my internship at Chop-Chop, I collaborated with an experienced IT team, focusing on tasks in Next.js. This experience provided valuable insights into teamwork and advanced my proficiency in Next.js.',
-    period: '2024',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind'],
+      'Specialized in deploying containerized robust applications with a microservice architecture. Setup on scalable, high-performance environment using OpenShift, Kubernetes, Docker, Terraform, and other cloud-native tools.',
+    period: '2023 - 2024',
+    technologies: ['Kubernetes', 'Docker', 'Terraform', 'CI/CD'],
   },
   {
     title: 'Frontend developer & UI designer',
-    company: 'GeoScan, remote',
-    description: (
-      <>
-        At GeoScan, I collaborate with frontend, backend, and GIS specialists to
-        build{' '}
-        <Link
-          className={cn(
-            buttonVariants({ variant: 'link' }),
-            'm-0 h-fit p-0 text-base'
-          )}
-          href="https://geoscan-app.com"
-          target="_blank"
-        >
-          geoscan-app.com
-        </Link>{' '}
-        — a platform for generating real estate reports. I’m responsible for
-        developing and maintaining the frontend, as well as designing UI/UX to
-        ensure a clear and intuitive user experience.
-      </>
-    ),
-    period: '2024 - present',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Leaflet'],
+    company: 'webraiders, remote',
+    description:
+      'As a freelancer, I specialized in frontend website development using React/Typescript. I undertook projects, collaborating with the design team, to the backend engineering to final implementation, ensuring client satisfaction.',
+    period: '2023',
+    technologies: ['React.js', 'Next.js', 'TypeScript', 'Tailwind'],
   },
 ] as const;
 

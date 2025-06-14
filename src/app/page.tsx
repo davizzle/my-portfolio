@@ -4,6 +4,7 @@ import { Experience } from '@/components/experience';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Intro } from '@/components/intro';
+import { ProjectIdea } from '@/components/project-idea';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
 import { ThemeToggle } from '@/components/theme-toggle';
@@ -15,6 +16,7 @@ const HomePage = async () => {
         <Header />
         <Intro />
         <SectionDivider />
+        <ProjectIdea />
         <About />
         <Experience />
         <Projects />
