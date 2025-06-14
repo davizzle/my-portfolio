@@ -23,6 +23,8 @@ export const About = () => {
         <Image
           src="/images/AboutMe.jpg"
           alt="Your Name"
+          width={500} // specify width
+          height={300} // specify height
           className="mx-auto mb-4 size-40 rounded-full" // Add your desired styling
         />
         <p className="mb-4">
